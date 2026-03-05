@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* DesiDealsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000021 /* DesiDealsApp.swift */; };
+		AA000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000022 /* ContentView.swift */; };
+		AA000003 /* DealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000023 /* DealsView.swift */; };
+		AA000004 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000024 /* EventsView.swift */; };
+
+		AA000006 /* DealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000026 /* DealDetailView.swift */; };
+		AA000007 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000027 /* EventDetailView.swift */; };
+
+		AA000009 /* CommonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000029 /* CommonViews.swift */; };
+		AA000010 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002A /* Restaurant.swift */; };
+		AA000011 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002B /* Deal.swift */; };
+		AA000012 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002C /* Event.swift */; };
+		AA000013 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002D /* MockData.swift */; };
+		AA000014 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA00002E /* ContentViewModel.swift */; };
+		AA000015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA00002F /* Assets.xcassets */; };
+		AA00001D /* VendorDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000106 /* VendorDetailView.swift */; };
+		AA000201 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000202 /* CommunityView.swift */; };
+		AA000203 /* AddListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000204 /* AddListingView.swift */; };
+		AA000205 /* CommunityMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000206 /* CommunityMapView.swift */; };
+		AA000207 /* ListingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000208 /* ListingDetailView.swift */; };
+		AA000209 /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000210 /* ListingService.swift */; };
+		AA000211 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000212 /* Listing.swift */; };
+		AA000213 /* DesiHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000214 /* DesiHubViewModel.swift */; };
+		AA000215 /* AddListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000216 /* AddListingViewModel.swift */; };
+		AA000217 /* DesiHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000218 /* DesiHubView.swift */; };
+		AA000219 /* ListingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000220 /* ListingCard.swift */; };
+		AA000221 /* ListingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000222 /* ListingMapView.swift */; };
+		AA000223 /* DesiHubProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000224 /* DesiHubProfileView.swift */; };
+		AA000016 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000099 /* CommonTypes.swift */; };
+		AA000017 /* Vendor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000100 /* Vendor.swift */; };
+		AA000018 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000101 /* Review.swift */; };
+		AA000019 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000102 /* User.swift */; };
+		AA00001A /* Redemption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000103 /* Redemption.swift */; };
+		AA000107 /* CommunityListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000200 /* CommunityListing.swift */; };
+		AA00001B /* ReviewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000104 /* ReviewsView.swift */; };
+		AA00001C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000105 /* ProfileView.swift */; };
+		AA000300 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AA000310 /* FirebaseAuth */; };
+		AA000301 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AA000311 /* FirebaseFirestore */; };
+		AA000302 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AA000312 /* FirebaseStorage */; };
+		AA000303 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA000313 /* FirebaseFirestoreSwift */; };
+		AA000304 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA000305 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000020 /* DesiDeals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesiDeals.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000021 /* DesiDealsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesiDealsApp.swift; sourceTree = "<group>"; };
+		AA000022 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000023 /* DealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsView.swift; sourceTree = "<group>"; };
+		AA000024 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+
+		AA000026 /* DealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealDetailView.swift; sourceTree = "<group>"; };
+		AA000027 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+
+		AA000029 /* CommonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViews.swift; sourceTree = "<group>"; };
+		AA00002A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		AA00002B /* Deal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
+		AA00002C /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		AA00002D /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		AA00002E /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		AA00002F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA000106 /* VendorDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VendorDetailView.swift; path = DesiDeals/Views/VendorDetailView.swift; sourceTree = SOURCE_ROOT; };
+		AA000202 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommunityView.swift; path = DesiDeals/Views/CommunityView.swift; sourceTree = SOURCE_ROOT; };
+		AA000204 /* AddListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddListingView.swift; path = DesiDeals/Views/AddListingView.swift; sourceTree = SOURCE_ROOT; };
+		AA000206 /* CommunityMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommunityMapView.swift; path = DesiDeals/Views/CommunityMapView.swift; sourceTree = SOURCE_ROOT; };
+		AA000208 /* ListingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListingDetailView.swift; path = DesiDeals/Views/ListingDetailView.swift; sourceTree = SOURCE_ROOT; };
+		AA000210 /* ListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListingService.swift; path = DesiDeals/Services/ListingService.swift; sourceTree = SOURCE_ROOT; };
+		AA000212 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Listing.swift; path = DesiDeals/Models/Listing.swift; sourceTree = SOURCE_ROOT; };
+		AA000214 /* DesiHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesiHubViewModel.swift; path = DesiDeals/ViewModels/DesiHubViewModel.swift; sourceTree = SOURCE_ROOT; };
+		AA000216 /* AddListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddListingViewModel.swift; path = DesiDeals/ViewModels/AddListingViewModel.swift; sourceTree = SOURCE_ROOT; };
+		AA000218 /* DesiHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesiHubView.swift; path = DesiDeals/Views/DesiHubView.swift; sourceTree = SOURCE_ROOT; };
+		AA000220 /* ListingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListingCard.swift; path = DesiDeals/Views/ListingCard.swift; sourceTree = SOURCE_ROOT; };
+		AA000222 /* ListingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListingMapView.swift; path = DesiDeals/Views/ListingMapView.swift; sourceTree = SOURCE_ROOT; };
+		AA000224 /* DesiHubProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DesiHubProfileView.swift; path = DesiDeals/Views/DesiHubProfileView.swift; sourceTree = SOURCE_ROOT; };
+		AA000099 /* CommonTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommonTypes.swift; path = DesiDeals/Models/CommonTypes.swift; sourceTree = SOURCE_ROOT; };
+		AA000100 /* Vendor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Vendor.swift; path = DesiDeals/Models/Vendor.swift; sourceTree = SOURCE_ROOT; };
+		AA000101 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Review.swift; path = DesiDeals/Models/Review.swift; sourceTree = SOURCE_ROOT; };
+		AA000102 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = DesiDeals/Models/User.swift; sourceTree = SOURCE_ROOT; };
+		AA000103 /* Redemption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Redemption.swift; path = DesiDeals/Models/Redemption.swift; sourceTree = SOURCE_ROOT; };
+		AA000200 /* CommunityListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommunityListing.swift; path = DesiDeals/Models/CommunityListing.swift; sourceTree = SOURCE_ROOT; };
+		AA000104 /* ReviewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReviewsView.swift; path = DesiDeals/Views/ReviewsView.swift; sourceTree = SOURCE_ROOT; };
+		AA000105 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = DesiDeals/Views/ProfileView.swift; sourceTree = SOURCE_ROOT; };
+		AA000305 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA000030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000300 /* FirebaseAuth in Frameworks */,
+				AA000301 /* FirebaseFirestore in Frameworks */,
+				AA000302 /* FirebaseStorage in Frameworks */,
+				AA000303 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA000031 = {
+			isa = PBXGroup;
+			children = (
+				AA000033 /* DesiDeals */,
+				AA000032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA000032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000020 /* DesiDeals.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000033 /* DesiDeals */ = {
+			isa = PBXGroup;
+			children = (
+				AA000021 /* DesiDealsApp.swift */,
+				AA000040 /* Views */,
+				AA000041 /* Models */,
+				AA000042 /* ViewModels */,
+				AA000043 /* Data */,
+				AA000305 /* GoogleService-Info.plist */,
+				AA00002F /* Assets.xcassets */,
+			);
+			path = DesiDeals;
+			sourceTree = "<group>";
+		};
+		AA000040 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA000022 /* ContentView.swift */,
+				AA000023 /* DealsView.swift */,
+				AA000024 /* EventsView.swift */,
+
+				AA000026 /* DealDetailView.swift */,
+				AA000027 /* EventDetailView.swift */,
+
+				AA000029 /* CommonViews.swift */,
+				AA000218 /* DesiHubView.swift */,
+				AA000220 /* ListingCard.swift */,
+				AA000222 /* ListingMapView.swift */,
+				AA000224 /* DesiHubProfileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA000041 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA00002A /* Restaurant.swift */,
+				AA00002B /* Deal.swift */,
+				AA00002C /* Event.swift */,
+				AA000212 /* Listing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000042 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA00002E /* ContentViewModel.swift */,
+				AA000214 /* DesiHubViewModel.swift */,
+				AA000216 /* AddListingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA000043 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AA00002D /* MockData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA000050 /* DesiDeals */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000051 /* Build configuration list for PBXNativeTarget "DesiDeals" */;
+			buildPhases = (
+				AA000052 /* Sources */,
+				AA000030 /* Frameworks */,
+				AA000053 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			packageProductDependencies = (
+				AA000310 /* FirebaseAuth */,
+				AA000311 /* FirebaseFirestore */,
+				AA000312 /* FirebaseStorage */,
+				AA000313 /* FirebaseFirestoreSwift */,
+			);
+			name = DesiDeals;
+			productName = DesiDeals;
+			productReference = AA000020 /* DesiDeals.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					AA000050 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA000061 /* Build configuration list for PBXProject "DesiDeals" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA000031;
+			productRefGroup = AA000032 /* Products */;
+			packageReferences = (
+				AA000320 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA000050 /* DesiDeals */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA000310 /* FirebaseAuth */ = {isa = XCSwiftPackageProductDependency; package = AA000320 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */; productName = FirebaseAuth; };
+		AA000311 /* FirebaseFirestore */ = {isa = XCSwiftPackageProductDependency; package = AA000320 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */; productName = FirebaseFirestore; };
+		AA000312 /* FirebaseStorage */ = {isa = XCSwiftPackageProductDependency; package = AA000320 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */; productName = FirebaseStorage; };
+		AA000313 /* FirebaseFirestoreSwift */ = {isa = XCSwiftPackageProductDependency; package = AA000320 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */; productName = FirebaseFirestoreSwift; };
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA000320 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {kind = versionRange; minimumVersion = 10.0.0; maximumVersion = 10.29.0;};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA000053 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000015 /* Assets.xcassets in Resources */,
+				AA000304 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA000052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* DesiDealsApp.swift in Sources */,
+				AA000002 /* ContentView.swift in Sources */,
+				AA000003 /* DealsView.swift in Sources */,
+				AA000004 /* EventsView.swift in Sources */,
+
+				AA000006 /* DealDetailView.swift in Sources */,
+				AA000007 /* EventDetailView.swift in Sources */,
+
+				AA000009 /* CommonViews.swift in Sources */,
+				AA000010 /* Restaurant.swift in Sources */,
+				AA000011 /* Deal.swift in Sources */,
+				AA000012 /* Event.swift in Sources */,
+				AA000014 /* ContentViewModel.swift in Sources */,
+				AA000016 /* CommonTypes.swift in Sources */,
+				AA000017 /* Vendor.swift in Sources */,
+				AA000018 /* Review.swift in Sources */,
+				AA000019 /* User.swift in Sources */,
+				AA00001A /* Redemption.swift in Sources */,
+				AA000107 /* CommunityListing.swift in Sources */,
+				AA000013 /* MockData.swift in Sources */,
+				AA00001B /* ReviewsView.swift in Sources */,
+				AA00001C /* ProfileView.swift in Sources */,
+				AA00001D /* VendorDetailView.swift in Sources */,
+				AA000201 /* CommunityView.swift in Sources */,
+				AA000203 /* AddListingView.swift in Sources */,
+				AA000205 /* CommunityMapView.swift in Sources */,
+				AA000207 /* ListingDetailView.swift in Sources */,
+				AA000209 /* ListingService.swift in Sources */,
+				AA000211 /* Listing.swift in Sources */,
+				AA000213 /* DesiHubViewModel.swift in Sources */,
+				AA000215 /* AddListingViewModel.swift in Sources */,
+				AA000217 /* DesiHubView.swift in Sources */,
+				AA000219 /* ListingCard.swift in Sources */,
+				AA000221 /* ListingMapView.swift in Sources */,
+				AA000223 /* DesiHubProfileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA000070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA000071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA000072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobasyalabs.desi.deals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobasyalabs.desi.deals;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000051 /* Build configuration list for PBXNativeTarget "DesiDeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000072 /* Debug */,
+				AA000073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000061 /* Build configuration list for PBXProject "DesiDeals" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000070 /* Debug */,
+				AA000071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA000060 /* Project object */;
+}
