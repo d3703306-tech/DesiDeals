@@ -38,7 +38,7 @@ struct MockData {
     static let vendors: [Vendor] = [
         // MARK: RESTAURANTS (existing + new)
         Vendor(
-            id: UUID(uuidString: "11111111-1111-1111-1111-111111111111")!,
+            id: UUID(uuidString: "11111111-1111-1111-1111-111111111111") ?? UUID(),
             name: "Namak Indian Cuisine",
             description: "Authentic Indian flavors with modern presentation. Known for exceptional service and rich curries.",
             vendorType: .restaurant,
@@ -59,7 +59,7 @@ struct MockData {
         ),
         
         Vendor(
-            id: UUID(uuidString: "22222222-2222-2222-2222-222222222222")!,
+            id: UUID(uuidString: "22222222-2222-2222-2222-222222222222") ?? UUID(),
             name: "O'Desi Aroma",
             description: "Street food vibes with authentic kebabs and quick bites. Perfect for casual dining.",
             vendorType: .restaurant,
@@ -80,7 +80,7 @@ struct MockData {
         ),
         
         Vendor(
-            id: UUID(uuidString: "33333333-3333-3333-3333-333333333333")!,
+            id: UUID(uuidString: "33333333-3333-3333-3333-333333333333") ?? UUID(),
             name: "Mehfil Indian Cuisine",
             description: "Punjabi specialties and modern Indian dishes. Famous for their lunch buffet.",
             vendorType: .restaurant,
@@ -101,7 +101,7 @@ struct MockData {
         ),
         
         Vendor(
-            id: UUID(uuidString: "44444444-4444-4444-4444-444444444444")!,
+            id: UUID(uuidString: "44444444-4444-4444-4444-444444444444") ?? UUID(),
             name: "Chennai Cafe",
             description: "Authentic South Indian vegetarian cuisine. Best dosas and idlis in DFW.",
             vendorType: .restaurant,
@@ -122,7 +122,7 @@ struct MockData {
         ),
         
         Vendor(
-            id: UUID(uuidString: "55555555-5555-5555-5555-555555555555")!,
+            id: UUID(uuidString: "55555555-5555-5555-5555-555555555555") ?? UUID(),
             name: "Rotate - The Indian Lounge",
             description: "Modern Indian lounge with DJ nights and fusion cuisine. Perfect for parties.",
             vendorType: .restaurant,
@@ -143,7 +143,7 @@ struct MockData {
         ),
         
         Vendor(
-            id: UUID(uuidString: "66666666-6666-6666-6666-666666666666")!,
+            id: UUID(uuidString: "66666666-6666-6666-6666-666666666666") ?? UUID(),
             name: "Biryani Pot",
             description: "Authentic Hyderabadi biryani specialist. Fresh ingredients, secret spice blends.",
             vendorType: .restaurant,
@@ -165,7 +165,7 @@ struct MockData {
         
         // MARK: GROCERY STORES (NEW)
         Vendor(
-            id: UUID(uuidString: "77777777-7777-7777-7777-777777777777")!,
+            id: UUID(uuidString: "77777777-7777-7777-7777-777777777777") ?? UUID(),
             name: "Patel Brothers",
             description: "America's largest Indian grocery chain. Fresh produce, spices, and authentic ingredients.",
             vendorType: .groceryStore,
@@ -186,7 +186,7 @@ struct MockData {
         ),
         
         Vendor(
-            id: UUID(uuidString: "88888888-8888-8888-8888-888888888888")!,
+            id: UUID(uuidString: "88888888-8888-8888-8888-888888888888") ?? UUID(),
             name: "India Bazaar",
             description: "Family-run grocery with the freshest vegetables and hard-to-find spices.",
             vendorType: .groceryStore,
@@ -201,14 +201,14 @@ struct MockData {
             coordinates: Coordinate(latitude: 32.9734, longitude: -96.7689),
             hours: "Mon-Sun: 10AM-8PM",
             specialties: ["Fresh Vegetables", "Organic Lentils", "Millet Flours", "Pickles"],
-            amenities: [.parking, .delivery, .vegetarian, .vegan, .vegetarian],
+            amenities: [.parking, .delivery, .vegetarian, .vegan],
             isActive: true,
             joinedDate: Date().addingTimeInterval(-86400 * 700)
         ),
         
         // MARK: SWEET SHOPS (NEW)
         Vendor(
-            id: UUID(uuidString: "99999999-9999-9999-9999-999999999999")!,
+            id: UUID(uuidString: "99999999-9999-9999-9999-999999999999") ?? UUID(),
             name: "Taj Sweets & Snacks",
             description: "Authentic Indian mithai, namkeen, and fresh snacks. Made fresh daily.",
             vendorType: .sweetShop,
@@ -229,7 +229,7 @@ struct MockData {
         ),
         
         Vendor(
-            id: UUID(uuidString: "00000000-0000-0000-0000-000000000000")!,
+            id: UUID(uuidString: "00000000-0000-0000-0000-000000000000") ?? UUID(),
             name: "Bengal Sweet House",
             description: "Bengali sweets specialist. Famous for rasgullas and sandesh.",
             vendorType: .sweetShop,
@@ -251,7 +251,7 @@ struct MockData {
         
         // MARK: CATERING SERVICES (NEW)
         Vendor(
-            id: UUID(uuidString: "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa")!,
+            id: UUID(uuidString: "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa") ?? UUID(),
             name: "Royal Catering Dallas",
             description: "Premium Indian catering for weddings, corporate events, and parties. 50-500 guests.",
             vendorType: .cateringService,
@@ -273,7 +273,7 @@ struct MockData {
         
         // MARK: FOOD TRUCK (NEW)
         Vendor(
-            id: UUID(uuidString: "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb")!,
+            id: UUID(uuidString: "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb") ?? UUID(),
             name: "Curry on Wheels",
             description: "Authentic Indian street food on wheels. Find us at DFW food truck parks!",
             vendorType: .foodTruck,
@@ -295,7 +295,7 @@ struct MockData {
         
         // MARK: SPICE MARKET (NEW)
         Vendor(
-            id: UUID(uuidString: "cccccccc-cccc-cccc-cccc-cccccccccccc")!,
+            id: UUID(uuidString: "cccccccc-cccc-cccc-cccc-cccccccccccc") ?? UUID(),
             name: "Spice Route Market",
             description: "Premium whole spices, masalas, and rare ingredients. Grind fresh on request.",
             vendorType: .spiceMarket,

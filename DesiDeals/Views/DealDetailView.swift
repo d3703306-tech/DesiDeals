@@ -75,7 +75,7 @@ struct DealDetailView: View {
             TranslucentNavigationBar(title: deal.title, scrollOffset: scrollOffset) {
                 HStack(spacing: 12) {
                     // Save Button
-                    Button(action: {}) {
+                    Button(action: { /* TODO: Implement save/bookmark deal */ }) {
                         Image(systemName: "bookmark")
                             .font(.title3)
                             .foregroundColor(.orange)
@@ -226,14 +226,18 @@ struct DealDetailView: View {
                             Text("Expires in \(daysLeft) days")
                                 .font(.subheadline)
                                 .foregroundColor(daysLeft <= 3 ? .red : .primary)
-                        } else {
+                        } else if daysLeft == 0 {
                             Text("Expires today!")
                                 .font(.subheadline)
                                 .foregroundColor(.red)
+                        } else {
+                            Text("Expired \(abs(daysLeft)) days ago")
+                                .font(.subheadline)
+                                .foregroundColor(.gray)
                         }
                     } icon: {
-                        Image(systemName: "clock")
-                            .foregroundColor(daysLeft <= 3 ? .red : .orange)
+                        Image(systemName: daysLeft < 0 ? "clock.arrow.circlepath" : "clock")
+                            .foregroundColor(daysLeft <= 3 && daysLeft >= 0 ? .red : daysLeft < 0 ? .gray : .orange)
                     }
                 }
             }

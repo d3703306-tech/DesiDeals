@@ -57,7 +57,7 @@ struct ProfileView: View {
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {}) {
+                    Button(action: { /* TODO: Implement settings navigation */ }) {
                         Image(systemName: "gear")
                             .foregroundColor(.orange)
                     }
@@ -139,7 +139,7 @@ struct ProfileHeaderView: View {
             }
             
             // Edit Profile Button
-            Button(action: {}) {
+            Button(action: { /* TODO: Implement edit profile */ }) {
                 Text("Edit Profile")
                     .font(.subheadline.bold())
                     .foregroundColor(.orange)
@@ -651,7 +651,7 @@ struct SignInPromptView: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
             
-            Button(action: {}) {
+            Button(action: { /* TODO: Implement sign in flow */ }) {
                 Text("Sign In")
                     .font(.headline)
                     .foregroundColor(.white)
